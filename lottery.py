@@ -18,6 +18,11 @@ def lottery():
     num1 = int(input("Your first lucky number: "))
     num2 = int(input("Your second lucky number: "))
     num3 = int(input("Your third lucky number: "))
+    while len(str(num1)) != 1 or len(str(num2)) != 1 or len(str(num3)) != 1:
+        print("Wrong input.")
+        num1 = int(input("Your first lucky number: "))
+        num2 = int(input("Your second lucky number: "))
+        num3 = int(input("Your third lucky number: "))
 
     lot1 = random.randint(0,9)
     lot2 = random.randint(0,9)
